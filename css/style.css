@@ -4,12 +4,17 @@
   padding: 0 25px;
 }
 
-.answerP{
-    padding: 10px 10px;
-    display: block;
-    background-color: #d3d3d3;
-    border: 1px solid #b8b8b8;
-    border-radius: 5px;
+input {
+  font-size: 20px;
+}
+
+.answerP {
+  font-size: 20px !important;
+  padding: 10px 10px;
+  display: block;
+  background-color: #d3d3d3;
+  border: 1px solid #b8b8b8;
+  border-radius: 5px;
 }
 
 .btn-hover1 {
@@ -94,10 +99,9 @@
 }
 
 .feature .content-left {
-
-    /* justify-content: center; */
+  /* justify-content: center; */
   width: 50%;
-  /* max-width: 50%; */
+  max-width: 50%;
   padding: 0 15px;
 }
 
@@ -110,17 +114,17 @@
   font-weight: 700;
 }
 .feature .content-left h6 {
-    font-size: 18px;
-    margin: 15px 0;
+  font-size: 18px;
+  margin: 15px 0;
 }
 .feature .content-left input {
-    padding: 5px;
-    width: 95%;
-    /* margin-left: 0 15px; */
-    display: block;
+  padding: 5px;
+  width: 95%;
+  /* margin-left: 0 15px; */
+  display: block;
 }
 .feature .content-left p {
-    /* text-align: center; */
+  /* text-align: center; */
   color: #5a5a5a;
   margin-bottom: 16px;
   font-size: 15px;
@@ -138,7 +142,7 @@
 
 .feature .content-right {
   width: 50%;
-  /* max-width: 50%; */
+  max-width: 50%;
   padding: 0 15px;
 }
 
@@ -151,6 +155,11 @@
   font-weight: 700;
 }
 
+.feature .content-right h6 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
 .feature .content-right img {
   border-radius: 6px;
   max-width: 100%;
@@ -158,8 +167,8 @@
 }
 
 .feature .content-right img:hover {
-  transform: translateY(-8px);
-  transition: 0.5s;
+  transform: translateY(-8px) scale(1.5);
+  transition: 1s;
 }
 
 /* Customize plugins here--------------------------------- */
