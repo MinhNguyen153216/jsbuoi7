@@ -27,34 +27,42 @@ function cau1() {
     for (let j = 0; j < 10; j++) {
       ans += a + " ";
       if (i == 0) {
-        ans += " ";
+        ans += "&nbsp";
+        ans += "&nbsp";
       }
       a += 1;
     }
-    if (a === 100) {
-      return ans;
-    }
-    ans += "\n";
+    ans += "<br />";
   }
-  return ans;
+  document.querySelector("#outputCau1").innerHTML = ans;
 }
 
-console.log(cau1());
+// console.log(cau1());
 // -----------------------------------------------
-function cau2(arr1) {
+function cau2() {
+  let input = document.querySelector("#inputCau2").value.trim();
+  let arr1 = input.split(" ");
+
+  let ans = [];
   for (let i = 0; i < arr1.length; i++) {
+    if (isNaN(Number(arr1[i]))) {
+      document.querySelector("#outputCau2").innerHTML =
+        "Nhập sai input, vui lòng nhập lại đúng format";
+      return;
+    }
     for (let j = Math.ceil(arr1[i] / 2); j >= 1; j--) {
       if (arr1[i] % j === 0 && j > 1) {
         break;
       } else if (j === 1) {
-        console.log(arr1[i]);
+        ans.push(arr1[i]);
         break;
       }
     }
   }
+  document.querySelector("#outputCau2").innerHTML = ans;
 }
 
-cau2([654, 123, 71, 2, 1, 6, 8, 9, 456]);
+// cau2([654, 123, 71, 2, 1, 6, 8, 9, 456]);
 // -----------------------------------------------
 function cau3(n) {
   let ans = 0;
