@@ -5,9 +5,9 @@ function openProject(evt, projectName) {
 
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-    // tablinks[i].classList = tablinks[i].classList.remove("tab1");
     tablinks[i].classList.remove("tab1");
+    // tablinks[i].className = tablinks[i].className.replace(" active", "");
+    // tablinks[i].classList = tablinks[i].classList.remove("tab1");
   }
 
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -16,8 +16,8 @@ function openProject(evt, projectName) {
   }
 
   document.getElementById(projectName).style.display = "block";
-  evt.currentTarget.className += " active";
   evt.currentTarget.classList.add("tab1");
+  // evt.currentTarget.className += " active";
 }
 
 function cau1() {
@@ -303,3 +303,4 @@ function cau10() {
 // console.log(cau10(10, 10));
 // console.log(cau10(5, 0));
 // console.log(cau10(2, 10));
+
